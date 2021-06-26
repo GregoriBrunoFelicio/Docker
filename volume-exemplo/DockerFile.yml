@@ -1,0 +1,17 @@
+FROM node:latest
+
+MAINTAINER Gregori Felicio
+
+COPY . /var/www
+
+WORKDIR /var/www
+
+RUN npm install
+
+ENTRYPOINT npm start
+
+EXPOSE 3000
+
+
+
+
